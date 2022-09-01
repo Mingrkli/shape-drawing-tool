@@ -117,6 +117,16 @@ function drawShape(x, y, radius, inset, n) {
 }
 
 let angle = 0;
+window.addEventListener('click', (e) => {
+    ctx.save();
+    ctx.translate(e.x, e.y);
+    ctx.rotate(angle);
+    hue+=3;
+    angle += spinSpeedValue;
+    drawShape(0, 0, radius, inset, n);
+    ctx.restore();
+})
+
 window.addEventListener('mousemove', (e) => {
     if (drawing) {
         // ctx.clearRect(0, 0, canvas.width, canvas.height);
