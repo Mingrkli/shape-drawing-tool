@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/script.js" defer></script>
+    </head>
+
+    <body>
+        <canvas id="canvas1"></canvas>
+
+        <div id="settings">
+            <h1>Drawing Settings</h1>
+
+            <div id="shape-type-choose">
+                <label>Shape Color</label>
+                <div>
+                    <label>Rainbow</label>
+                    <input id="shape-type-rainbow" type="radio" name="ColorTypeChoose" value="rainbow" checked>
+                    <label>Color</label>
+                    <input id="shape-type-color" type="radio" name="ColorTypeChoose" value="color">
+                </div>
+                <input id="shape-color" type="color" value="#000000">
+            </div> 
+
+            <div>
+                <label>Shape Size</label>
+                <input id="shape-size" type="number" value="50">
+            </div> 
+
+            <div>
+                <label>Shape Inset</label>
+                <input id="shape-inset" type="number" value="0.5">
+            </div> 
+
+            <div>
+                <label>Shape Sides</label>
+                <input id="shape-sides" type="number" value="5">
+            </div> 
+
+            <div>
+                <label>Outline Color</label>
+                <input id="outline-color" type="color" value="#000000">
+            </div> 
+
+            <div>
+                <label>Outline Width</label>
+                <input id="outline-width" type="number" value="2">
+            </div>
+
+            <div>
+                <label>Shadow Color</label>
+                <input id="shadow-color" type="color" value="#000000">
+            </div> 
+
+            <div>
+                <label>Shadow Offset X</label>
+                <input id="shadow-offset-x" type="number" value="10">
+            </div>
+
+            <div>
+                <label>Shadow Offset Y</label>
+                <input id="shadow-offset-y" type="number" value="10">
+            </div>
+
+            <div>
+                <label>Shadow Blur</label>
+                <input id="shadow-blur" type="number" value="10">
+            </div>
+
+            <div>
+                <label>Spin Speed</label>
+                <input id="spin-speed" type="number" value="0.1">
+            </div>
+
+            <div>
+                <label>Background Color</label>
+                <input id="background-color" type="color" value="#000000">
+            </div> 
+        </div>
+    </body>
+</html>

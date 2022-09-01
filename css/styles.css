@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: black;
+}
+
+#settings {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#settings > div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    margin-bottom: 5px;
+}
+
+#settings > div > input {
+    height: 30px;
+    width: 60px;
+}
+
+#shape-type-choose > label {
+    grid-row: 1/3;
+}
+
+#shape-type-choose > input {
+    display: none;
+    grid-column: 2/3;
+
+    width: 100% !important;
+}
+
+#shape-color[data-show] {
+    display: block;
+}
+
+#settings > div > input[type="number"] {
+    padding: 5px;
+}
+
+#settings h1 {
+    margin-bottom: .5rem;
+
+    font-size: 2rem;
+    text-align: center;
+}
